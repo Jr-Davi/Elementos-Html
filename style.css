@@ -1,0 +1,433 @@
+*{margin: 0; padding:0;}
+
+body {
+    background: linear-gradient(
+    329.54deg,
+    #b3c4e9 0%,
+    #8183c2 100%);
+    overflow-x: hidden; 
+}
+
+#acessibilidade{
+    width:100%;
+    height: auto;
+    margin: auto;
+    background-color: #fff;
+}
+
+#atalhos{
+    list-style: none;
+    font-family: arial;
+    font-size: 1em;
+    margin-left: 2%;
+}
+
+#atalhos li{
+    display: inline;
+}
+
+#pgaccess{
+    padding-left: 44%;
+}
+
+.contraste{
+    padding-left: 1%;
+}
+
+.fonte{
+    padding-left: 1%;
+}
+
+
+
+#atalhos2 li{
+    display: inline;
+}
+
+.imagemFundo{
+    background-image: url(imagem/fundo3.png);
+    background-repeat:repeat-x;
+}
+
+img{
+    display:inherit;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+}
+
+/*barra de navegação*/
+nav{
+    width: 71%;
+    height:auto;
+    background-color: rgba(4, 43, 82, 0.74);
+    padding-top:2%;
+    padding-bottom: 2%;
+    padding-left: 29%;
+    float: left;
+}
+
+#menu{
+    list-style: none;
+    border: 1px solid #FFF;
+    background-color: #321bfa;
+    float: left;
+}
+
+#menu li{
+    position: relative;
+    float:left;
+    border-right: 1px solid #FFF;
+}
+
+#menu li a{
+    font-family: arial;
+    color: #FFF;
+    font-size: 20px;
+    text-decoration: none; /*tira o sublinhado dos links por exemplo*/
+    padding: 5px 10px;
+    display: block;
+}
+
+#menu li a:hover{
+    background-color: #0c002c;
+    transition: 1s;
+}
+
+/*submenu*/
+#menu li ul{
+    position: absolute;
+    top:25px;
+    left: 0;
+    background-color: #321bfa;
+    display: none;
+}
+
+#menu li:hover ul, #menu li.over ul {
+    display: block;
+}
+
+#menu li ul li{
+    border:1px solid #FFF;
+    display:block;
+    width: 170px; 
+}
+
+
+.breadcumb{
+    padding-left: 2%;
+    list-style: none;
+}
+
+.breadcumb li{
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    color:rgb(46, 62, 87)
+}
+
+.breadcumb li+li:before{
+    padding: 8px;
+    color: rgb(46, 62, 87);
+    content: "/\00a0";
+}
+
+.breadcumb li a{
+    color:rgb(83, 68, 151);
+    text-decoration: none;
+}
+
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.2rem; 
+    text-align:center;
+    color:white;
+    margin-bottom: 4%;
+}
+
+.paragrafo{
+    text-align: justify;
+}
+
+h1{
+    margin-top: 12%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#tituloComentario{
+    color: rgb(1, 59, 40);
+    font-style: oblique;
+    margin-bottom: 3%;
+}
+
+#tituloMetadados{
+    color: rgb(2, 46, 90);
+    font-style: italic;
+    margin-bottom: 3%;
+}
+
+#tituloUl{
+    color: rgb(133, 1, 1);
+    font-style:oblique;
+    margin-bottom: 3%;
+}
+
+#tituloOl{
+    color: rgb(172, 37, 37);
+    font-style:italic;
+    margin-bottom: 3%;
+}
+
+#tituloLayout{
+    color: rgb(0, 78, 102);
+    font-style:italic;
+}
+
+table{
+    border-radius: 20px;
+    margin: 3% auto 3% auto;
+    border-color: rgb(3, 35, 66);
+    font-family: arial;
+    font-size:1.2rem;
+    color: #222121;
+    
+}
+
+footer{
+    margin-top: 5%;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: rgb(4, 43, 82);
+    color: rgb(224, 224, 224);
+}
+
+video{
+    width: 40%;
+    height:auto;
+    margin-left: 9%;
+    margin-top: 4%
+}
+
+iframe{
+    width: 560px;
+    height:304px;
+    margin-left: 1%;
+}
+
+audio{
+    margin: 3% 40%
+}
+
+/* responsive */
+label [for=bt_menu]{
+    display:none;
+}
+
+#bt_menu{
+    display:none;
+}
+
+
+#tematitle{
+    margin-top: 10%;
+    margin-bottom: 2%;
+    font-size: 4rem;
+    font-style: italic;
+    color:rgb(0, 95, 238)
+}
+
+.imgSize {
+    width: 500px;
+    height:auto; 
+}
+
+#iconbars{visibility: hidden;}
+
+@media screen and (max-width: 1242px){
+    #pgaccess{
+        padding-left: 30%;
+    }
+    iframe{
+        width: 40%;
+        height:277px;
+        margin-left: 1%;
+    }
+
+}
+
+@media screen and (max-width: 1100px){
+    #pgaccess{
+        padding-left: 30%;
+    }
+}
+
+@media screen and (max-width: 980px){
+    #pgaccess{
+        padding-left: 20%;
+    }
+
+}
+
+@media screen and (max-width: 899px){
+    #pgaccess{
+        padding-left: 15%;
+    }
+    iframe{
+        width: 58%;
+        height:268px;
+        margin-top: 20%;
+        margin-left: 21%;
+    }
+    
+    video{
+        width: 58%;
+        height:300px;
+        margin-left: 21%;
+        margin-top: 4%
+    }
+    audio{
+        margin: 3% 28%
+    }   
+    #menu{
+        display:none;
+    }
+
+    label[for="bt_menu"]{
+        display: block;
+    }
+
+    #bt_menu:checked ~ #menu{
+        display:block;
+    }
+    #menu{
+        margin-left: 0;
+    }
+    #menu li{
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+
+    #menu li ul{
+        position: static;
+        width: 100%;
+        float:left;    
+    }
+    #menu li ul li{
+        position: relative;
+        width:100%;
+        float: left;
+        display: block;
+    } 
+
+    #menu{
+        padding-left: 4%;
+    }
+    #iconbars{visibility: visible;}
+
+}
+
+@media screen and (max-width: 768px){
+    #atalhos li{
+        display:inline-flex;
+    }
+    #atalhos li#pgacess{
+        display: inline-flex;
+    }
+
+    #atalhos li.contraste{
+        display: inline-flex;
+    }
+
+    #atalhos li.fonte{
+        display: inline-flex;
+    }
+}
+
+@media screen and (max-width: 747px){
+    #pgaccess{
+        padding-left: 10%;
+    }
+    img{
+        display:inherit;
+    }
+}
+
+@media screen and (max-width: 704px){
+    #pgaccess{
+        padding-left: 7%;
+    }
+
+    audio{
+        margin-right: auto;
+    }
+    
+}
+
+@media screen and (max-width: 680px){
+
+
+    #pgaccess{
+        padding-left: 7%;
+    }
+
+    #atalhos{
+        font-size: 0.8em;
+    }
+
+    
+}
+
+@media screen and (max-width: 571px){
+    #pgaccess{
+        padding-left: 6%;
+    }
+
+    #atalhos{
+        font-size: 0.78em;
+    }
+}
+   
+@media screen and (max-width: 519px){
+    #pgaccess{
+        padding-left: 7%;
+    }
+
+    #atalhos{
+        font-size: 0.71em;
+    }
+
+    table{
+    font-size:0.9rem;
+    width: 310px;
+    height:150px;
+
+    }
+
+    audio{
+        margin-left: 21%;
+    }
+}
+
+@media screen and (max-width: 497px){
+    .imgSize {
+        width: 220px;
+        height:220px; 
+    }
+
+}
+
+
+@media screen and (max-width: 467px){
+    #pgaccess{
+        padding-left: 6%;
+    }
+
+    #atalhos{
+        font-size: 0.6em;
+    }
+}

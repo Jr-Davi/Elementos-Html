@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Metadados</title>
+    <!--metadados-->
+    <meta charset="UTF-8" />
+    <meta name="description" content="metadados" />
+    <meta name="keywords" content="metadados, html, web" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagem/icone_site.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+    src="https://kit.fontawesome.com/fdbc06b9ad.js"
+    crossorigin="anonymous"
+  ></script>
+  </head>
+  <body>
+    <div id="acessibilidade">
+      <ul id="atalhos">
+        <li>
+          <a
+            href="#conteudo"
+            accesskey="1"
+            title="Ir diretamente para o conteúdo"
+            >Ir para o conteúdo [1]</a
+          >
+        </li>
+        <li>
+          <a href="#menu" accesskey="2" title="Ir diretamente para o menu"
+            >Ir para o menu [2]</a
+          >
+        </li>
+        <li>
+          <a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé"
+            >Ir para o rodapé [3]</a
+          >
+        </li>
+        <li id="pgaccess">
+          <a
+            href="acessibilidade.html"
+            title="Ir para a página de acessibilidade"
+            >ACESSIBILIDADE</a
+          >
+        </li>
+        <li class="contraste"><a href="#" title="Contraste Preto"></a></li>
+        <li class="contraste"><a href="#" title="Sem Contraste"></a></li>
+        <li class="fonte">
+          <a href="#" title="Aumentar a fonte (Ctrl +)">A+</a>
+        </li>
+        <li class="fonte">
+          <a href="#" title="Diminuir a fonte (Ctrl -)">A-</a>
+        </li>
+      </ul>
+    </div>
+    <div class="imagemFundo">
+      <header>
+        <!--Topo-->
+        <img class="imgSize" src="imagem/FATEC_ZONA_LESTE.png" alt="Logo Fatec Zona Leste" />
+        <nav>
+          <label for="bt_menu"><i id="iconbars" class="fas fa-lg fa-bars"></i></label>
+          <input type="checkbox" id="bt_menu" />
+          <ul id="menu">
+            <li>
+              <a href="index.html"> <i class="fas fa-home"></i>Home</a>
+            </li>
+            <li><a href="comentario.html">Comentários</a></li>
+            <li><a href="#">Metadados</a></li>
+            <li>
+              <a href="#">Listas</a>
+              <ul>
+                <li><a href="ul.html">Lista não ordenada</a></li>
+                <li><a href="ol.html">Lista ordenada</a></li>
+              </ul>
+            </li>
+            <li><a href="layout.html">Elementos de layout</a></li>
+          </ul>
+        </nav>
+        <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+          new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+      </header>
+      <ul class="breadcumb">
+        <li><a href="index.html"></a>Início</li>
+        <li><a href="">Metadados</a></li>
+      </ul>
+      <section>
+        <!--Conteúdo-->
+
+        <h1 id="tituloMetadados">Metadados</h1>
+        <audio controls>
+          <source src="audios_videos/Metadados.mp3" type="audio/mp3">
+          Não foi possível reproduzir o áudio...
+        </audio>
+        <p>
+          Metadados são dados externos à página que são usados ​​pelos
+          navegadores (como exibir conteúdo), pelos mecanismos de pesquisa
+          (palavras-chave) e outros serviços da web;
+        </p>
+        <p>
+          O elemento meta é usado para especificar qual conjunto de caracteres é
+          usado, descrição da página, palavras-chave, autor e outros metadados.
+        </p>
+        <img
+          class="imgSize"
+          src="imagem/metadados.png"
+          alt="Imagem sobre metadados no HTML"
+        />
+
+        <video controls>
+          <source src="audios_videos/video.mp4" type="video/mp4" />
+          Não possível reproduzir o vídeo...
+        </video>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/-gwyAlV2riA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                        picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </section>
+      <!--Rodapé-->
+      <footer>
+        Todos os direitos reservados &copy; 2021
+        <p>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img
+              style="border: 0; width: 88px; height: 31px"
+              src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+              alt="CSS válido!"
+            />
+          </a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
